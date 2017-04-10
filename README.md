@@ -10,17 +10,28 @@
 
 例如微信，QQ使用的方式是直接禁用掉Preview在主题中使用
 
-`<item name="android:windowDisablePreview">true</item>` 即可。但是有个问题就是，当你点击图标的时候会有一
+    <item name="android:windowDisablePreview">true</item>` 即可。但是有个问题就是，当你点击图标的时候会有一
 小段的时间卡顿，才会起来App。感觉体验不是很好。
 
 而网易则是默认显示，也就是让它白屏。
 这种方式点击立马会有响应，但是有白屏也不太好看。
 
 而新浪微博则是采用
-  `<item name="android:windowBackground">@drawable/welcome_layler_drawable</item>`当App起来后先显示，
+
+    <item name="android:windowBackground">@drawable/welcome_layler_drawable</item>当App起来后先显示，
 然后在叠加一个一样的页面在上面。
 
 于是我就再找，发现不使用AppCompatActivity，直接使用Activity，就没有这个问题。
+
+####  返回键退出时不结束Activity
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            moveTaskToBack(false);
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
 
 
 
