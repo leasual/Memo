@@ -16,6 +16,10 @@
 而网易则是默认显示，也就是让它白屏。
 这种方式点击立马会有响应，但是有白屏也不太好看。
 
+而新浪微博则是采用
+  `<item name="android:windowBackground">@drawable/welcome_layler_drawable</item>`当App起来后先显示，
+然后在叠加一个一样的页面在上面。
+
 于是我就再找，发现不使用AppCompatActivity，直接使用Activity，就没有这个问题。
 
 
