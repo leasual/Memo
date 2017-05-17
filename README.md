@@ -33,6 +33,53 @@
         return super.onKeyDown(keyCode, event);
     }
 
+#### 分析apk包的大小，以及依赖关系，对于apk瘦身还是非常有用的。
+
+AndroidStudio2.2以上开始支持直接打开apk文件。
+
+然后通过gradle 可以查看各个项目依赖了哪些library.
+
+//gradle :project name:dependencies [--configuration compile]
+
+  gradle :app:dependencies --configuration compile
+
+  如下是我分析的结果：
 
 
+    >gradlew :compiler:dependencies --configuration compile
+
+    Parallel execution with configuration on demand is an incubating feature.
+
+    :compiler:dependencies
+
+
+
+    ------------------------------------------------------------
+
+    Project :compiler
+------------------------------------------------------------
+    compile - Dependencies for source set 'main'.
+
+    +--- com.google.auto.service:auto-service:1.0-rc2
+
+    |    +--- com.google.auto:auto-common:0.3
+
+    |    |    \--- com.google.guava:guava:18.0
+
+    |    \--- com.google.guava:guava:18.0
+
+    +--- com.squareup:javapoet:1.7.0
+
+    \--- project :annotation
+
+
+    (*) - dependencies omitted (listed previously)
+
+
+    BUILD SUCCESSFUL
+
+
+    Total time: 1.141 secs
+
+可以清晰的看到依赖了哪些包。
 
