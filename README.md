@@ -51,10 +51,7 @@ AndroidStudio2.2以上开始支持直接打开apk文件。
     Parallel execution with configuration on demand is an incubating feature.
 
     :compiler:dependencies
-
-
-
-    ------------------------------------------------------------
+------------------------------------------------------------
 
     Project :compiler
 ------------------------------------------------------------
