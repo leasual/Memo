@@ -1,5 +1,56 @@
 
+----------------------------------------start ／appsign.io/分析得到各个大厂基本都是用的第三方库---------------------------------------
+
 ====界面效果类====
+
+知名公司很多炫酷的动画库  
+https://github.com/Yalantis    
+
+https://github.com/Ramotion  
+
+强大的动画库  
+
+https://github.com/MengTo/Spring  
+
+https://github.com/lkzhao/Hero  
+
+
+常用的动画库带demo  
+
+https://github.com/younatics/MotionBook  
+
+swift工具库集  
+
+https://github.com/keitaoouchi/awesome-swift  
+
+material design库  
+
+https://github.com/CosmicMind/Material  
+
+navigationbar全屏返回 
+
+类似qq带渐变效果  
+http://www.jianshu.com/p/454b06590cf1  
+
+https://github.com/EnderTan/ETNavBarTransparent  
+
+全屏手势返回  
+
+https://github.com/forkingdog/FDFullscreenPopGesture  
+
+状态栏变色  
+
+https://github.com/wangrui460/WRNavigationBar  
+
+
+https://github.com/MoZhouqi/KMNavigationBarTransition  
+
+顶部有图片时，navigation bar透明，然后向上滑动时navigation bar渐变为不透明  
+
+https://github.com/bijuc92/Animating-Navigation-Bar  
+
+
+
 
 3d效果（A simple, highly customisable, data-driven 3D carousel for iOS and Mac OS）
 https://github.com/nicklockwood/iCarousel
@@ -19,7 +70,8 @@ https://github.com/CoderMJLee/MJRefresh
 
 collection view 瀑布流  
 
-https://github.com/chiahsien/CHTCollectionViewWaterfallLayout
+https://github.com/chiahsien/CHTCollectionViewWaterfallLayout  
+
 
 
 文字处理  
@@ -40,7 +92,13 @@ https://github.com/facebook/pop
 
 TableView Swipe  
 
-https://github.com/MortimerGoro/MGSwipeTableCell
+https://github.com/MortimerGoro/MGSwipeTableCell  
+
+
+UITableViewCell 左右滑动出现item项操作  
+
+https://github.com/SwipeCellKit/SwipeCellKit  
+
 
 毛玻璃效果  
 
@@ -185,7 +243,90 @@ https://github.com/Moya/Moya
 
 RxSwift  
 
-https://github.com/ReactiveX/RxSwift
+https://github.com/ReactiveX/RxSwift  
+
+----------------------------------------end ／appsign.io/分析得到各个大厂基本都是用的第三方库---------------------------------------  
+
+
+
+============================================swift写的一些库==============================================  
+
+
+Pageview title indicator  
+
+https://github.com/Yalantis/Segmentio  
+
+
+popup弹出动画  
+
+https://github.com/MarioIannotta/MIBlurPopup  
+
+下拉刷新进度条  
+
+https://github.com/ninjaprox/NVActivityIndicatorView  
+
+pallax header view  
+
+https://github.com/gskbyte/GSKStretchyHeaderView  
+
+
+卡片滑动选择消失类似tinder  
+
+https://github.com/Yalantis/Koloda  
+
+viewpager中间卡片，点击卡片展开  
+
+https://github.com/Ramotion/expanding-collection   
+
+
+collectionview带动画类似viewpager  
+
+https://github.com/KelvinJin/AnimatedCollectionViewLayout  
+
+
+类似pinterest点击图片展开到下一个全屏的显示界面  
+
+https://github.com/demonnico/PinterestSwift  
+
+
+文字随机出现  
+
+https://github.com/zipme/RQShineLabel  
+
+
+图表支持svg  
+
+https://github.com/exyte/Macaw  
+
+渐变背景 
+
+https://github.com/cruisediary/Pastel  
+
+类似spinner  
+
+https://github.com/younatics/YNDropDownMenu  
+
+侧滑菜单  
+
+https://github.com/jonkykong/SideMenu  
+
+tabbar  底部tab  
+
+https://github.com/Ramotion/animated-tab-bar  
+
+
+类似最美app底部，宝宝在路上日历中间选择的比较大的效果  
+
+https://github.com/ltebean/LTInfiniteScrollView-Swift  
+
+
+
+
+
+
+
+
+
 
 
 
