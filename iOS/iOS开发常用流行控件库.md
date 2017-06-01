@@ -49,7 +49,30 @@ https://github.com/MoZhouqi/KMNavigationBarTransition
 
 https://github.com/bijuc92/Animating-Navigation-Bar  
 
+--------------------------------------------------------------------------------------------  
+36kr使用的就是这个库作为每个vc的导航
 
+越来越多的应用为每一个 VC 设置单独的导航条，而不是之前那样使用一个全局统一的导航条，因为不同的 VC 有不同的视觉样式，前一个是蓝色的，后一个也许要做成红色、透明，或者干脆没有导航条。  
+
+虽然开发者可以在每个 VC 的 - (void)viewWillAppear （想想为什么不是 - (void)viewDidLoad） 方法中设置自己所需的样式，但是在同一个导航条上来回修改，稍不注意就会导致样式混乱。另一种实现方式，是隐藏全局那个导航条，每个 VC 自己通过 addSubview:(UIView *)view 的方式自己设置导航条。这种实现是可行的，但是使用不方便了，如：  
+
+无法使用 self.navigationItem.rightBarButtonItem 等来设置导航按钮，而必须自己手动往 navigationBar 上加；  
+
+无法使用 self.title 来修改导航标题，而必须自己添加监听；  
+
+无法方便地设置 navigationBarHidden；  
+
+无法方便地自动调整 contentInsets。  
+
+等等。  
+
+
+本项目提供一种透明的方式，让开发者像以前一样使用导航器，同时，每个 push 进来的 VC 有自己独立的导航条。  
+
+https://github.com/rickytan/RTRootNavigationController  
+
+
+--------------------------------------------------------------------------------------------  
 
 
 3d效果（A simple, highly customisable, data-driven 3D carousel for iOS and Mac OS）
